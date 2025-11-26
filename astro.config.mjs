@@ -4,8 +4,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jessynapse.github.io',
-  base: '/jessynapse',
+  site: 'https://agkirici.github.io',
+  base: '/phd-portfolio-astro',
   integrations: [mdx(), tailwind()],
   output: 'static',
 });
