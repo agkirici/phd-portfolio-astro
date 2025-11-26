@@ -2,24 +2,195 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Home | Jessynapse">
-  <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-    <div class="text-center">
-      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-        Welcome
-      </h1>
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-        PhD researcher transitioning to industry. Exploring the intersection of research and practical applications.
-      </p>
-    </div>
-
-    <div class="mt-16">
-      <div class="prose prose-lg mx-auto">
+<BaseLayout title="Ryan Lowell — Pharma & Biotech Portfolio">
+  <!-- Hero / Home -->
+  <section id="home" class="section hero">
+    <div class="container hero-content">
+      <div>
+        <p class="kicker">PhD → Pharma / Biotech</p>
+        <h1>Welcome</h1>
+        <p class="lead">
+          I'm <strong>Ryan Lowell</strong>, a PhD researcher transitioning into the
+          pharmaceutical and biotech industry. I work at the intersection of molecular
+          biology, data analysis, and translational science.
+        </p>
         <p>
-          This portfolio showcases my research, projects, and journey from academia to industry.
+          This portfolio highlights projects, publications, and technical skills that
+          demonstrate how my academic work translates into impact for drug discovery,
+          clinical development, and data-driven decision making.
         </p>
       </div>
     </div>
-  </div>
-</BaseLayout>
+  </section>
 
+  <!-- Research & Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Research &amp; Projects</h2>
+      <p class="section-intro">
+        Selected work reframed for industry relevance. Replace these examples with
+        your own projects.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Translational Biomarker Analysis in Oncology</h3>
+          <p>
+            Longitudinal analysis of patient-derived samples to identify response-associated
+            biomarkers. Combined NGS data with clinical endpoints to support
+            go/no-go decisions in an early-phase trial.
+          </p>
+          <ul class="tag-list">
+            <li>NGS</li>
+            <li>Biomarkers</li>
+            <li>Oncology</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>High-Throughput Screening Data Pipeline</h3>
+          <p>
+            Built a reproducible analysis workflow for plate-based screening data,
+            including QC, normalization, and hit selection, making results easier to
+            review for non-technical stakeholders.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Data Pipeline</li>
+            <li>HTS</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Real-World Data Exploratory Study</h3>
+          <p>
+            Exploratory analysis of anonymized EHR data to characterize treatment
+            patterns and outcomes in a specific patient subgroup, informing future
+            clinical strategy.
+          </p>
+          <ul class="tag-list">
+            <li>R</li>
+            <li>RWD / RWE</li>
+            <li>Statistics</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section alt">
+    <div class="container">
+      <h2>Publications &amp; Presentations</h2>
+      <p class="section-intro">
+        Example entries — you can swap these for real DOIs, conference talks, or posters.
+      </p>
+
+      <ul class="pub-list">
+        <li>
+          <strong>Lowell R</strong>, et al. "Molecular signatures of treatment response in
+          solid tumors." <em>Journal of Translational Oncology</em>, 2024.
+          <span class="pub-meta">DOI: 10.0000/jto.2024.00000</span>
+        </li>
+        <li>
+          <strong>Lowell R</strong>, et al. "From bench to bedside: aligning academic
+          biomarkers with clinical endpoints." Talk at <em>BioPharma Data Summit</em>, 2023.
+        </li>
+        <li>
+          <strong>Lowell R</strong>, et al. "Scalable pipelines for pre-clinical
+          assay data." Poster at <em>Computational Life Sciences Conference</em>, 2022.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <p class="section-intro">
+        Focused on what matters to pharma / biotech teams: data, biology, and collaboration.
+      </p>
+
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3>Biology &amp; Assays</h3>
+          <ul>
+            <li>Molecular &amp; cell biology techniques</li>
+            <li>NGS &amp; gene expression profiling</li>
+            <li>Biomarker discovery &amp; validation</li>
+            <li>In vitro models &amp; functional readouts</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Data &amp; Programming</h3>
+          <ul>
+            <li>Python, R</li>
+            <li>Pandas, tidyverse, basic ML workflows</li>
+            <li>Reproducible analysis (Git, notebooks)</li>
+            <li>Data visualization for decision makers</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Collaboration &amp; Communication</h3>
+          <ul>
+            <li>Cross-functional work with clinicians &amp; statisticians</li>
+            <li>Scientific communication for non-experts</li>
+            <li>Stakeholder-oriented reporting &amp; slide decks</li>
+            <li>Mentoring junior researchers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV / Resume -->
+  <section id="cv" class="section alt">
+    <div class="container">
+      <h2>CV / Resume</h2>
+      <p class="section-intro">
+        Link this button to the latest PDF of the candidate's resume.
+      </p>
+      <a class="button" href="/assets/ryan-lowell-cv.pdf" target="_blank" rel="noopener">
+        Download Resume (PDF)
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="section-intro">
+        Simple contact section — you can later swap this for a form handler.
+      </p>
+
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:ryan.lowell@example.com">ryan.lowell@example.com</a>
+          </p>
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="https://www.linkedin.com/in/ryan-lowell" target="_blank" rel="noopener">
+              linkedin.com/in/ryan-lowell
+            </a>
+          </p>
+        </div>
+        <div>
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/ryan-lowell" target="_blank" rel="noopener">
+              github.com/ryan-lowell
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
