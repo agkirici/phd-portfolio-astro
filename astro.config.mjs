@@ -3,8 +3,7 @@ import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://agkirici.github.io',
-  base: '/phd-portfolio-astro',
+  site: 'https://jessynapse-portfolio.vercel.app', // Will be updated after Vercel deployment
   integrations: [mdx(), tailwind()],
   output: 'static',
 });
